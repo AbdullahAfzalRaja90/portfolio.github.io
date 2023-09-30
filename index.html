@@ -1,205 +1,183 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-
-    <!--box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--custom css-->
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Portfolio</title>
+<!--box icons-->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+<!--custom css-->
+<link href="style.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <!--header design-->
-    <header class="header">
-        <a href="#" class="logo" style="padding-right: 4.5in;">Portfolio</a>
-        
-        <i class='bx bx-menu' id="menu-icon"></i>
+<nav class="responsive-navbar">
+<div class="menu-toggle" id="mobile-menu">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+<ul class="nav-list">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-
-    <!--home section design-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Abdullah Afzal</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>A passionate individual currently embarking on a journey of knowledge and innovation at Riphah International University in Islamabad, Pakistan. My academic pursuit revolves around the dynamic world of software engineering. With a keen interest in technology and a thirst for creative problem-solving, I find myself constantly immersed in the intricate dance of code and logic. Beyond the realms of academics, I'm an explorer of possibilities, always seeking ways to translate my ideas into impactful solutions. Welcome to my portfolio, where I invite you to delve into my world of software engineering and explore the projects that reflect my dedication and enthusiasm for this ever-evolving field.Feel free to explore my portfolio, and don't hesitate to reach out for collaboration or consultation.</p>
-         <div class="social-media">
-            <a href="https://www.facebook.com/home.php"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://www.twitter.com/home"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="https://www.linkedin.com/home"><i class='bx bxl-linkedin' ></i></a>
-         </div>
-         <a href="./cv/Abdullah Afzal  CV Resume (1).pdf" class="btn">Download CV</a>
-        </div>
-
-        <div class="home-img">
-            <img src="images/home1.png" style="width: 400px; height: 350px;" alt="">
-        </div>
-    </section>
-
-    <!--about section design-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/home1.png" style="width: 400px; height: 350px;" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer!</h3>
-            <p>Hello, I'm <span>Abdullah Afzal</span>, a passionate and versatile developer with a love for creating digital experiences. I thrive on turning ideas into innovative and engaging applications, whether it's through web development, Android apps, or game design.I'm always excited to explore new technologies and stay up-to-date with industry trends. Collaboration, problem-solving, and attention to detail are at the core of my work ethic. I thrive in dynamic environments and am constantly seeking opportunities to challenge myself and learn.</p>
-        <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-
-    <!--services section design-->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-          
-        <div class="services-box">
-            <i class='bx bx-code-alt' ></i>
-            <h3>Web Development</h3>
-            <p>With a solid foundation in front-end and back-end technologies, I specialize in crafting responsive and user-friendly websites. From designing elegant user interfaces to optimizing site performance, I'm dedicated to delivering seamless online experiences.</p>
-        <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-        <i class='bx bxl-android' ></i>
-        <h3>Android Development</h3>
-        <p>As an Android enthusiast, I've honed my skills in building mobile applications that combine functionality, aesthetics, and user-centric design. From concept to deployment, I'm committed to crafting apps that provide value and delight to users.</p>
-    <a href="#" class="btn">Read More</a>
-    </div>
-
-        <div class="services-box">
-         <i class='bx bxs-game' ></i>
-        <h3>Game Development</h3>
-         <p>Game development is my playground for creativity. I have experience in designing and developing captivating games across various platforms. From 2D to 3D, I enjoy pushing the boundaries of interactive entertainment.</p>
-        <a href="#" class="btn">Read More</a>
-        </div>
-    </div>
-    
-    
-
-    </section>
-
-    <!--portfolio section design-->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest<span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="/images/portfolio.01.jpg"style="width: 350px; height: 250px;" alt="">
-                <div class="portfolio-layer">
-                <h4>E-commerce Website</h4>
-                <p> Developed a responsive e-commerce platform featuring secure payment gateways, user profiles, and a dynamic product catalog to enhance online shopping experiences.</p>
-            <a href="#"><i class='bx bx-link-external' ></i></a>
-            </div>
-          </div>
-
-          <div class="portfolio-box">
-            <img src="/images/portfolio.02.jpg"style="width: 350px; height: 250px;" alt="">
-            <div class="portfolio-layer">
-            <h4>Educational App</h4>
-            <p>Created an interactive educational app aimed at improving learning outcomes for students through gamification and quizzes.</p>
-        <a href="#"><i class='bx bx-link-external' ></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="/images/portfolio.03.jpg"style="width: 350px; height: 250px;" alt="">
-        <div class="portfolio-layer">
-        <h4>Mobile Game</h4>
-        <p> Created an addictive 2D mobile game with captivating graphics and engaging gameplay.</p>
-    <a href="#"><i class='bx bx-link-external' ></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="/images/portfolio.04.jpg"style="width: 350px; height: 250px;" alt="">
-    <div class="portfolio-layer">
-    <h4>Finance Tracker </h4>
-    <p>Built a cross-platform finance tracker application that helps users manage expenses, track budgets, and visualize financial data.</p>
-<a href="#"><i class='bx bx-link-external' ></i></a>
+<!--header design-->
+<header class="header">
+<a class="logo" href="#" style="padding-right: 4.5in;">Portfolio</a>
+<i class="bx bx-menu" id="menu-icon"></i>
+<nav class="navbar">
+<a class="active" href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<!--home section design-->
+<section class="home" id="home">
+<div class="home-content">
+<h3>Hello, It's Me</h3>
+<h1>Abdullah Afzal</h1>
+<h3>And I'm a <span class="multiple-text"></span></h3>
+<p>A passionate individual currently embarking on a journey of knowledge and innovation at Riphah International University in Islamabad, Pakistan. My academic pursuit revolves around the dynamic world of software engineering. With a keen interest in technology and a thirst for creative problem-solving, I find myself constantly immersed in the intricate dance of code and logic. Beyond the realms of academics, I'm an explorer of possibilities, always seeking ways to translate my ideas into impactful solutions. Welcome to my portfolio, where I invite you to delve into my world of software engineering and explore the projects that reflect my dedication and enthusiasm for this ever-evolving field.Feel free to explore my portfolio, and don't hesitate to reach out for collaboration or consultation.</p>
+<div class="social-media">
+<a href="https://www.facebook.com/home.php"><i class="bx bxl-facebook"></i></a>
+<a href="https://www.twitter.com/home"><i class="bx bxl-twitter"></i></a>
+<a href="https://www.instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
+<a href="https://www.linkedin.com/home"><i class="bx bxl-linkedin"></i></a>
+</div>
+<a class="btn" href="./cv/Abdullah Afzal  CV Resume (1).pdf">Download CV</a>
+</div>
+<div class="home-img">
+<img alt="" src="images/home1.png" style="width: 400px; height: 350px;"/>
+</div>
+</section>
+<!--about section design-->
+<section class="about" id="about">
+<div class="about-img">
+<img alt="" src="images/home1.png" style="width: 400px; height: 350px;"/>
+</div>
+<div class="about-content">
+<h2 class="heading">About <span>Me</span></h2>
+<h3>Frontend Developer!</h3>
+<p>Hello, I'm <span>Abdullah Afzal</span>, a passionate and versatile developer with a love for creating digital experiences. I thrive on turning ideas into innovative and engaging applications, whether it's through web development, Android apps, or game design.I'm always excited to explore new technologies and stay up-to-date with industry trends. Collaboration, problem-solving, and attention to detail are at the core of my work ethic. I thrive in dynamic environments and am constantly seeking opportunities to challenge myself and learn.</p>
+<a class="btn" href="#">Read More</a>
+</div>
+</section>
+<!--services section design-->
+<section class="services" id="services">
+<h2 class="heading">My <span>Services</span></h2>
+<div class="services-container">
+<div class="services-box">
+<i class="bx bx-code-alt"></i>
+<h3>Web Development</h3>
+<p>With a solid foundation in front-end and back-end technologies, I specialize in crafting responsive and user-friendly websites. From designing elegant user interfaces to optimizing site performance, I'm dedicated to delivering seamless online experiences.</p>
+<a class="btn" href="#">Read More</a>
+</div>
+<div class="services-box">
+<i class="bx bxl-android"></i>
+<h3>Android Development</h3>
+<p>As an Android enthusiast, I've honed my skills in building mobile applications that combine functionality, aesthetics, and user-centric design. From concept to deployment, I'm committed to crafting apps that provide value and delight to users.</p>
+<a class="btn" href="#">Read More</a>
+</div>
+<div class="services-box">
+<i class="bx bxs-game"></i>
+<h3>Game Development</h3>
+<p>Game development is my playground for creativity. I have experience in designing and developing captivating games across various platforms. From 2D to 3D, I enjoy pushing the boundaries of interactive entertainment.</p>
+<a class="btn" href="#">Read More</a>
 </div>
 </div>
-
-   <div class="portfolio-box">
-    <img src="/images/portfolio.05.jpg"style="width: 350px; height: 250px;" alt="">
-    <div class="portfolio-layer">
-    <h4>Real Estate Listings Website</h4>
-    <p> Developed a feature-rich real estate platform with search filters, interactive maps, and property listings to help users find their dream homes.</p>
-<a href="#"><i class='bx bx-link-external' ></i></a>
+</section>
+<!--portfolio section design-->
+<section class="portfolio" id="portfolio">
+<h2 class="heading">Latest<span>Projects</span></h2>
+<div class="portfolio-container">
+<div class="portfolio-box">
+<img alt="" src="./images/portfolio.01.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>E-commerce Website</h4>
+<p> Developed a responsive e-commerce platform featuring secure payment gateways, user profiles, and a dynamic product catalog to enhance online shopping experiences.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
 </div>
 </div>
-
-    <div class="portfolio-box">
-    <img src="/images/portfolio.06.jpg" style="width: 350px; height: 250px;" alt="">
-    <div class="portfolio-layer">
-    <h4>E-Library System</h4>
-    <p> Established a digital library system with categorization, search, and user management features for educational institutions and book enthusiasts.</p>
-<a href="#"><i class='bx bx-link-external' ></i></a>
+<div class="portfolio-box">
+<img alt="" src="./images/portfolio.02.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>Educational App</h4>
+<p>Created an interactive educational app aimed at improving learning outcomes for students through gamification and quizzes.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
 </div>
 </div>
-        </div>
-
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-    <form onsubmit="sendEmail(); reset(); return false;">
-        <div class="input-box">
-        <input type="text" placeholder="Full Name">    
-        <input type="email" placeholder="Email Address">  
-    </div>
-        <div class="input-box">
-        <input type="number" placeholder="Mobile Number">    
-        <input type="text" placeholder="Email Subject">  
-    </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-    <input type="submit" value="Send Message" class="btn">
-    </form>
-
-    </section>
-
-    <!--footer design-->
-    <footer class="footer">
-        <div class="footer-text">
-            <P>Copyright &copy; 2023 by Codehal | All Rights Reserved.</P>
-        </div>
-
-        <div class="footer-iconTop">
-         <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>   
-        </div>
-    </footer>
-
-    <!-- scroll reveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-     <!--tyed js-->
-     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-
-    <!--custom js-->
-    
-
-    <script src="/script.js"></script>
-
-
-
-   
+<div class="portfolio-box">
+<img alt="" src="images/portfolio.03.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>Mobile Game</h4>
+<p> Created an addictive 2D mobile game with captivating graphics and engaging gameplay.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
+</div>
+</div>
+<div class="portfolio-box">
+<img alt="" src="./images/portfolio.04.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>Finance Tracker </h4>
+<p>Built a cross-platform finance tracker application that helps users manage expenses, track budgets, and visualize financial data.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
+</div>
+</div>
+<div class="portfolio-box">
+<img alt="" src="./images/portfolio.05.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>Real Estate Listings Website</h4>
+<p> Developed a feature-rich real estate platform with search filters, interactive maps, and property listings to help users find their dream homes.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
+</div>
+</div>
+<div class="portfolio-box">
+<img alt="" src="./images/portfolio.06.png" style="width: 350px; height: 250px;"/>
+<div class="portfolio-layer">
+<h4>E-Library System</h4>
+<p> Established a digital library system with categorization, search, and user management features for educational institutions and book enthusiasts.</p>
+<a href="#"><i class="bx bx-link-external"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- contact section design -->
+<section class="contact" id="contact">
+<h2 class="heading">Contact <span>Me!</span></h2>
+<form action="mailto:abdullahraja9090@gmail.com" enctype="text/plain" method="post">
+<div class="input-box">
+<input placeholder="Full Name" type="text"/>
+<input placeholder="Email Address" type="email"/>
+</div>
+<div class="input-box">
+<input placeholder="Mobile Number" type="number"/>
+<input placeholder="Email Subject" type="text"/>
+</div>
+<textarea cols="30" id="" name="" placeholder="Your Message" rows="10"></textarea>
+<input class="btn" type="submit" value="Send Message"/>
+</form>
+</section>
+<!--footer design-->
+<footer class="footer">
+<div class="footer-text">
+<p>Copyright © 2023 by Codehal | All Rights Reserved.</p>
+</div>
+<div class="footer-iconTop">
+<a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+</div>
+</footer>
+<!-- scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!--tyed js-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!--custom js-->
+<script src="script.js"></script>
 </body>
 </html>

@@ -53,17 +53,43 @@ section{
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
-}
 
+    @media screen and (max-width: 768px) {
+        #menu-icon {
+            display: block; /* Show the menu icon for screens below 768px width */
+        }
+    
+        .navbar {
+            display: none; /* Hide the navigation links by default */
+        }
+    
+        .navbar.active {
+            display: block; /* Show the navigation links when active (menu is clicked) */
+        }
+    }
+
+}
+.navbar{
+    display: none;
+}
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
 }
+.navbar.active{
+    display: block;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+}
 
 .navbar a:hover,
-.navbar a.active {
+.navbar.active a {
+    
     color: var(--main-color);
 }
 #menu-icon{
@@ -510,4 +536,198 @@ margin: .7rem 0;
         margin-top: 2rem;
     }
 
+}
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    /* Adjusting layout for mobile while preserving original design aesthetics */
+    /* No color or transition changes */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Other specific mobile styles to preserve original design while enhancing responsiveness */
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjusting layout for tablet while preserving original design aesthetics */
+    /* No color or transition changes */
+}
+
+/* Laptop/Desktop styles - the default styles are applied, so no changes needed here */
+
+/* Styling the navigation bar */
+.responsive-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Adjust the color as needed */
+    padding: 10px 20px;
+}
+
+/* Styling the navigation list */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Styling the navigation items */
+.nav-list li {
+    margin: 0 10px;
+}
+
+/* Styling the navigation links */
+.nav-list a {
+    text-decoration: none;
+    color: white; /* Adjust the color as needed */
+}
+
+/* Styling the menu toggle (hamburger icon) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Styling the bars of the menu toggle */
+.bar {
+    background-color: white; /* Adjust the color as needed */
+    height: 3px;
+    width: 25px;
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+/* Making the navigation bar responsive */
+@media only screen and (max-width: 768px) {
+    /* Hiding the navigation list and displaying the menu toggle on smaller screens */
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333; /* Adjust the color as needed */
+    }
+
+    .nav-list.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Styling the navigation bar for larger screens */
+.responsive-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black; /* Adjusting the color to match the provided screenshots */
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Making the navigation bar responsive for smaller screens */
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        position: absolute;
+        background-color: white; /* Adjusting the background color to match the provided screenshots */
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Adjusting the positioning of the navigation items on larger screens */
+.responsive-navbar {
+    justify-content: flex-end; /* Aligning the navigation items to the end (right side) of the navigation bar */
+}
+
+/* Customizing the margin and padding for precise positioning */
+.nav-list {
+    margin-right: 50px; /* Adjusting the right margin to position the navigation items as per the provided image */
+}
+
+/* Optional: Adjusting the styling of the navigation items for a more polished look */
+.nav-list a {
+    padding: 10px; /* Adding padding to the navigation items for a more polished look */
+    border-radius: 5px; /* Optional: Adding border-radius for rounded corners */
+    transition: background-color 0.3s; /* Adding a transition effect for a smoother hover effect */
+}
+
+.nav-list a:hover {
+    background-color: #f0f0f0; /* Changing the background color on hover for a subtle hover effect */
+    color: black; /* Optional: Adjusting the text color on hover */
+}
+
+/* Adjusting the media query for smaller screens to ensure the navigation items are collapsed into a hamburger menu */
+@media only screen and (max-width: 1024px) { /* Adjusting the breakpoint for collapsing the navigation items */
+    .nav-list {
+        margin-right: 0; /* Resetting the right margin on smaller screens */
+    }
+}
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    /* Hide the menu toggle button */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Style the navigation list for larger screens */
+    .responsive-navbar .nav-list {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+    }
+
+    /* Style the navigation links for larger screens */
+    .responsive-navbar .nav-list li {
+        list-style-type: none;
+    }
+
+    .responsive-navbar .nav-list a {
+        color: var(--text-color);
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+
+    .responsive-navbar .nav-list a:hover {
+        color: var(--main-color);
+    }
 }

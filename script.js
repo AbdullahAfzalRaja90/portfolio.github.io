@@ -2,10 +2,16 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.oneclick = () => {
+
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+
 };
+
+    
+
+
 
 /*------------scroll sections active link-----*/
 let sections= document.querySelectorAll('section');
@@ -59,3 +65,13 @@ loop: true
 
 });
 
+
+// Function to toggle the hamburger menu
+function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+}
+
+// Adding an event listener to the menu toggle to call the toggleMenu function when clicked
+const menuToggle = document.querySelector('#mobile-menu');
+menuToggle.addEventListener('click', toggleMenu);
